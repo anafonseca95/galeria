@@ -1,0 +1,125 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #fbfbfa, #FFCED3, #F3693E, #4F86C6);
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;     /* Centraliza o conteúdo verticalmente */
+    flex-direction: column;
+}
+
+/* Barra de navegação */
+.navbar {
+    background-color: transparent; /* Cor transparente para a barra de navegação */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: #000000; /* Cor do texto */
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    color: #000000; /* Cor do texto */
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.navbar nav ul li a:hover {
+    color: #F5F0E1; /* Cor ao passar o mouse */
+}
+
+/* Container de login */
+.login-container {
+    background: rgba(245, 240, 225, 0.50);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+}
+
+/* Título "Bienvenido" */
+.login-container h2 {
+    color: black;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Grupos de entrada */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #8EB1DB; /* Cor do botão de login */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+button:hover {
+    background-color: #7A9EC2; /* Cor ao passar o mouse */
+}
+
+.links p {
+    font-size: 14px;
+    color: black;
+}
+
+.links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
