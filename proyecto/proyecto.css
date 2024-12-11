@@ -1,51 +1,32 @@
-body {
-    font-family: 'Montserrat', sans-serif;
+body{
     margin: 0;
-    padding: 0;
-    background-image: url(../img/fondodegrade.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #333;
-    text-align: left;
+    height: 100vh;
 }
-li{
-    color: rgb(0, 0, 0);   
-}
-section{
-    text-align: right;
-    margin: 0px;
-    margin-right: 24px;
-    margin-left: 24px;
-    display: flex;
-    justify-content: space-between;
-}
-nav li{
-        display: inline-block;
-        color: rgb(255, 255, 255);
-        margin: 2px;
-        padding: 20px;
-        cursor: pointer;
-        font-size: 20px;
-}
-nav li:hover{
-    color:rgb(8, 8, 8);
-}
-
-#titulo{
-    display: inline-block;
-}
-
-#titulo h1{
-    font-size:  50px;
-    padding: 20px;
-    float: left;
-}
-#titulo a{
-    text-decoration: none;
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     color: black;
-    float: right;
+}
+h2 {
+    text-align: center;
+    margin: 0px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #020202;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover{
+    color: rgb(246, 245, 245); /* Color inicial */
+    transition: color 0.4s ease; /* Animación suave para el cambio de color */
+    transform: translateY(-4px); /* Hace que el botón se eleve */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    border-radius: 30px;
 }
 section{
     text-align: right;
@@ -60,7 +41,6 @@ nav{
     justify-content: space-between;
     margin-right: 24px;
     margin-left: 24px;
-    padding: 59px;
 }
 nav li{
         display: inline-block;
@@ -95,7 +75,7 @@ div{
     overflow: hidden;
     box-shadow: 0 2px 5px white;
     transition: transform 0.4s;
-    padding: 5px;   
+    padding: 5px;
 }
 .imagenes img{
     position: absolute;

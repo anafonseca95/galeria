@@ -3,39 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style_alumno.css">
+    <link href="alumno.css" rel="stylesheet">
     <title>Alumno</title>
+    <link rel="stylesheet" type="text/css" href="css/style_alumno.css">
 </head>
 <body>
-    <!-- Barra de navegação -->
-    <section class="navbar">
-        <h1>Universidad</h1>
+      <section id="titulo">
+        <h1>Universidad Silicon F5</h1>
         <nav>
             <ul>
-                <li><a href="proyecto.html">Home</a></li>
+               <li><a href="proyecto.html">Home</a></li>
                 <li><a href="carrera.html">Carreras</a></li>
-                <li><a href="sn.html">Sobre nosotros</a></li>
+                <li><a href="sobrenosotro.html">Sobre nosotros</a></li>
                 <li><a href="alumno.html">Alumno</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </section>
-    <!-- Container de login -->
+    <div class="formulario">
     <div class="login-container">
-        <h2>Bienvenido</h2>
+        <h1>Bienvenidos</h1>
         <div class="input-group">
-            <label for="Username">Username</label>
+            <label for="Username"></label>
             <input type="text" id="Username" name="Username" placeholder="Username" required>
         </div>
         <div class="input-group">
-            <label for="Password">Password</label>
-            <input type="password" id="Password" name="Password" placeholder="Password" required>
+            <label for="Password"Password></label>
+            <input type="text" id="Password" name="Password" placeholder="Password" required>
         </div>
         <button type="submit">Submit</button>
-        <div class="links">
-            <p><a href="#">¿Perdiste tu contraseña?</a></p>
-            <p><a href="#">¿No tienes cuenta? Regístrate</a></p>
-        </div>
+        <p>¿Perdiste tu contraceña?</p>
+        <p>¿No tienes cuenta? Registrate</p>
     </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Universidad Silicon F5. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

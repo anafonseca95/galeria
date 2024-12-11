@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 242, 229);
+    height: 100vh;
+    margin: 0;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    background: #f4b8e6;
+    padding: 20px;
+    border: 1px;
+    border-radius: 15px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 6px #a89cc6;
+}
+
+/* Título principal */
+h1 {
+    font-size: 1.7 rem;
+    font-weight: 500;
+    color: #b9037c;
+}
+
+/* Texto do temporizador */
+#temporizador {
+    font-size: 1.1rem;
+    font-weight: 400; /* Mesma grossura do título */
+    margin: 20px 0;
+    color: #b9037c;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #a89cc6;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.boton_adivinar{
+    padding: 10px 20px;
+    background-color: #f9cf84;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.boton_adivinar:hover{
+    background-color: #ff9900;
+    
+}
+
+/* Estilo específico para o botão "Reiniciar" */
+#resetBoton {
+    display: none; /* Escondido inicialmente */
+    margin: 20px auto; /* Centraliza o botão */
+    background-color: #f9cf84;
+    border: #9b7aef;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
+
+#resetBoton:hover {
+    background-color: #ff9900;
+    border: #9b7aef;
+
+}

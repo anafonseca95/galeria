@@ -1,0 +1,189 @@
+/* RESET E ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2.titulo{
+    color:#4f2755;
+    font-size: 44px;
+    text-align: center;
+}
+
+body{
+    background-color: aliceblue;
+    min-height: 100vh;
+    font-size: 16px;
+    color: #333;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contacto {
+    background-color: #c5d74d;
+    box-shadow: #4f2755;
+    color: white;
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+/* ESTILO DA INTERFACE */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+    margin-bottom: 20px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #510404;
+    text-decoration: none;
+    display: inline block;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: inline block;
+    transition: 0.2s;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 40px;
+    display: inline block;
+}
+
+/* MENU DESKTOP */
+.menu-desktop ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu-desktop ul li a:hover {
+    color: #5e98d5; /* Cor azul para destaque */
+}
+
+/* BOTÃO DE CONTATO */
+
+.btn-contacto:hover {
+    background-color: #5c6e3d; 
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* BOTÃO PADRÃO */
+button {
+    background-color: #cf51e2;
+    color: white;
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #75074d; /* Verde mais escuro no hover */
+    transform: scale(1.05);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 2%;
+    }
+
+    .menu-desktop ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-contacto {
+        margin-top: 10px;
+    }
+}
+
+/* IMAGENS */
+.logo img {
+    width: 150px; /* Defina o tamanho desejado */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    display: block; /* Remove espaçamentos indesejados ao redor da imagem */
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #333;
+    font-size: 42px;
+    line-height: 50px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: aqua;
+    font-size: 84px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #000000;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+}
+
+/*estilo das especialidades*/
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+.especialidades .especialidades-box{
+    color: #000000;
+    padding: 40px;
+
+}
+
+.especialidades .especialidades-box i{
+    font-size: 72px;
+    color: #cf51e2;
+}

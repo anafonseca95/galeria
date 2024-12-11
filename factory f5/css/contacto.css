@@ -1,26 +1,129 @@
-body{
-    background: linear-gradient(to bottom right, #fbfbfa, #FFCED3, #F3693E, #4F86C6); 
+body {
     margin: 0;
-    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #26547D;
 }
-li{
-    color: rgb(0, 0, 0);   
+#titulo h1{
+    font-size:  50px;
+    padding: 20px;
+    float: left;
 }
-section{
-    text-align: right;
-    margin: 0px;
-    margin-right: 24px;
-    margin-left: 24px;
+#titulo a{
+    text-decoration: none;
+    color: black;
+    float: right;
+}
+
+section:first-of-type {
+    color: #26547D;
+    text-align: left;
+    padding: 20px 0;
+}
+
+section:first-of-type h1 {
+    margin: 20;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section:first-of-type nav ul {
+    list-style: none;
+    margin: 50px 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
+    gap: 20px;
 }
-nav li{
-        display: inline-block;
-        color: rgb(255, 255, 255);
-        margin: 2px;
-        padding: 10px;
-        cursor: pointer;
+
+section:first-of-type nav ul li {
+    display: inline;
 }
-nav li:hover{
-    color:rgb(8, 8, 8);
+
+section:first-of-type nav ul li a {
+    text-decoration: none;
+    color: #0a0a0a;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+section:first-of-type nav ul li a:hover {
+    color: #FF8C42;
+}
+
+/* Seção principal */
+section:nth-of-type(2) {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+section:nth-of-type(2) h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Estilizando o formulário */
+form {
+    background-color: #f3f0e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form button {
+    background-color: #4F86C6;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    gap: 5px;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+div img {
+    max-width: 300px;
+    height: auto;
+    margin: 20px;
+}
+
+footer {
+    background-color: #26547D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

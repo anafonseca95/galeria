@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="juego.css">
+    <title>Juego</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Juego de adivinanza de números</h1>
+        <p>Estoy pensando en un número entre 1 y 100. ¡Intenta adivinarlo!</p>
+        <p id="temporizador">Tiempo restante 60 segundos</p>
+        <input type="number" placeholder="Introduce tu número" id="adivinaInput">
+        <button class="boton_adivinar" onclick="adivinar()">Adivinar</button> 
+        <p id="resultado"></p>
+        <button id="resetBoton" style="display:none" onclick="reiniciar()">Reiniciar</button>
+    </div>
+    <script src="juego.js"></script>
+</body>
+</html>

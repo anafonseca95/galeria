@@ -1,21 +1,42 @@
 body{
-    background: linear-gradient(to bottom right, #fbfbfa, #FFCED3, #F3693E, #4F86C6); 
+    background-image: url("fondodegrade.png"); 
     margin: 0;
     height: 100vh;
      margin: 0 auto;
     width: 1160px;
+    background: #26547D;
 }
 
-
-/*** header ***/
 header{
-    background-color: red;
+    background-color: #26547D;
    
 
 }
 
+#er h1{
+    font-size: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+#er li{
+    list-style-type: none;
+    font-size: 20px;
+
+}
+#er a{
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+
+}
+#lista li{
+    text-decoration: none;
+}
+
 li{
-    color: rgb(0, 0, 0);   
+    color: rgb(0, 0, 0); 
+     
+
 }
 section{
     text-align: right;
@@ -42,16 +63,27 @@ main{
     
 }
 
+h2{
+    font-size: 30px;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
 .nosotros{
     display: inline-block;
     width: 1160px;
+    height: 350px;
 
 }
 
 .tex{
         width: 560px;
-    height: 231px;
+    height: 280px;
     float: left;
+}
+.uni{
+        font-size: 26px;
+    color: #FFFFFF;
 }
 
 .logo img{
@@ -66,12 +98,26 @@ main{
 /*** footer ***/
 
 #footer{
-    background-color: #4285F4;
-    display: inline-block;
-    
-     width: 1160px;
+    background-color: #26547D;
+    display: flex;
+     width: 650px;
      height: 250px;
+     justify-content: space-around;
 
+}
+#footer li{
+    list-style-type: none;
+    padding: 0;
+    color: #ffffff;
+}
+#footer a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+#footer span{
+    font-size: 18px;
 }
 
 #carreras{
@@ -82,3 +128,43 @@ main{
 #nosotros2{
  float: right;
 }
+.contact-button {
+    background-color: #8095ff;
+    color: #000000; 
+    border: none;  
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    height: 40px;
+    width: 260px;
+}
+
+.arrow {
+    margin-left: 10px; 
+    color: red;
+    font-size: 20px; 
+}
+
+#footer img{
+     display: block; 
+    margin: 0 auto; 
+    max-width: 100%;
+    height: auto; 
+    position: relative; 
+    top: -20px; 
+    margin-left: 320px;
+}
+
+#derecho{
+    background-color: #26547D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

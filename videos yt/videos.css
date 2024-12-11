@@ -1,0 +1,97 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+
+}
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-color: #ffccff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    text-align: center;
+    background-image: repeating-linear-gradient(135deg, #9400d3, #9400d3 20px, #00bfff 20px, #00bfff 40px);
+    background-size: 20px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #4bd5ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.video-card {
+    position: relative;
+    background: linear-gradient(45deg, #ff69b4, #8a2be2);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    border: 5px solid #ff00ff;
+    overflow: hidden;
+}
+
+.video-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 20, 147, 0.8);
+    background: linear-gradient(45deg, #ff1493, #9400d3);
+    cursor: pointer;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+    border: 5px solid #ffffff;
+}
+
+.video-card h2 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .contenedor {
+        gap: 20px;
+    }
+
+    .video-card {
+        padding: 10px;
+    }
+
+    .video-card h2 {
+        font-size: 1.2rem;
+    }
+}
